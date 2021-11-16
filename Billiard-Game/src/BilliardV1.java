@@ -17,6 +17,7 @@ public class BilliardV1 {
         Kugel1.zeichneDich();
         while (i == 1) {
             if (Maus1.istGedrueckt()) {
+                Kugel1.drehe(1);
                 Kugel1.rolle();
             }
         }

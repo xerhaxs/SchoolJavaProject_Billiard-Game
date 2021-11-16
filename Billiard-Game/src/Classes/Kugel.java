@@ -1,5 +1,4 @@
 package Classes;
-
 import sum.kern.Buntstift;
 
 public class Kugel {
@@ -22,9 +21,7 @@ public class Kugel {
         Buntstift1Kugel.zeichneKreis(20);
     }
 
-    public void drehe() {
-        Buntstift1Kugel.dreheUm(i);
+    public void drehe(int rWinkel) {
+        Buntstift1Kugel.dreheUm(rWinkel);
     }
-
-
 }
