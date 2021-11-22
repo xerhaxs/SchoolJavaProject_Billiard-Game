@@ -28,4 +28,8 @@ public class Kugel {
     public void bewege(int xPostion, int yPostion) {
         Buntstift1Kugel.bewegeBis(xPostion, yPostion);
     }
+
+    public void gibFrei() {
+        Buntstift1Kugel.gibFrei();
+    }
 }

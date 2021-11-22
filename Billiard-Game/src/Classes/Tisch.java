@@ -60,4 +60,8 @@ public class Tisch {
         Buntstift1Tisch.bewegeBis(xBisPositionChanged, yBisPositionChanged);
         Buntstift1Tisch.zeichneKreis(30);
     }
+
+    public void gibFrei() {
+        Buntstift1Tisch.gibFrei();
+    }
 }
