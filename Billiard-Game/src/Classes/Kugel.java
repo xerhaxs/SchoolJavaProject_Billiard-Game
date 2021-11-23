@@ -6,19 +6,22 @@ public class Kugel {
 
     public Kugel() {
         Buntstift1Kugel = new Buntstift();
-        Buntstift1Kugel.bewegeBis(100, 100);
     }
 
     public void zeichneDich() {
         Buntstift1Kugel.zeichneKreis(20);
     }
 
-    public void rolle() {
+    public void loescheDich() {
         Buntstift1Kugel.radiere();
         Buntstift1Kugel.zeichneKreis(20);
         Buntstift1Kugel.normal();
+    }
+
+    public void rolle() {
+        this.loescheDich();
         Buntstift1Kugel.bewegeUm(1);
-        Buntstift1Kugel.zeichneKreis(20);
+        this.zeichneDich();
     }
 
     public void drehe(int rWinkel) {
@@ -26,7 +29,9 @@ public class Kugel {
     }
 
     public void bewege(int xPostion, int yPostion) {
+        this.loescheDich();
         Buntstift1Kugel.bewegeBis(xPostion, yPostion);
+        this.zeichneDich();
     }
 
     public void gibFrei() {

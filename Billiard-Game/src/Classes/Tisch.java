@@ -1,5 +1,6 @@
 package Classes;
 import sum.kern.Buntstift;
+import sum.kern.Bildschirm;
 import sum.kern.Zeichen;
 import sum.kern.Muster;
 import java.awt.Color;
@@ -7,17 +8,18 @@ import java.awt.Color;
 
 public class Tisch {
     Buntstift Buntstift1Tisch;
+    Bildschirm Bildschirm1;
 
     public Tisch() {
+        Bildschirm1 = new Bildschirm();
         Buntstift1Tisch = new Buntstift();
     }
 
-    public void zeichneDich(int xVonPosition, int yVonPosition, int xBisPosition, int yBisPosition) {
-        System.out.println("xVonPos " + xVonPosition);
-        System.out.println("yVonPos " + yVonPosition);
-        System.out.println("xBisPos " + xBisPosition);
-        System.out.println("yBisPos " + yBisPosition);
-
+    public void zeichneDich() {
+        int xVonPosition = this.Bildschirm1.breite();
+        int yVonPosition = this.Bildschirm1.hoehe();
+        int xBisPosition = this.Bildschirm1.breite();
+        int yBisPosition = this.Bildschirm1.hoehe();
         int xVonPositionChanged = xVonPosition;
         int yVonPositionChanged = yVonPosition;
         int xBisPositionChanged = xBisPosition;
