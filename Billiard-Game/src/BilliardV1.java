@@ -35,6 +35,9 @@ public class BilliardV1 {
             }
             if (Tastatur1.wurdeGedrueckt()) {
                 if (Tastatur1.zeichen() == Zeichen.ESCAPE) {
+                    Tastatur1.gibFrei();
+                    Maus1.gibFrei();
+                    Tisch1.gibFrei();
                     Kugel1.gibFrei();
                 }
             }

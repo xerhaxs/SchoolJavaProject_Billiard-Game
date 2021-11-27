@@ -65,5 +65,6 @@ public class Tisch {
 
     public void gibFrei() {
         Buntstift1Tisch.gibFrei();
+        Bildschirm1.gibFrei();
     }
 }
