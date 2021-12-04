@@ -25,16 +25,25 @@ public class BilliardV1 {
         Kugel2.bewegeBis(500, 500);
 
         Kugel1.setzeFarbe("#ababab");
-        Kugel1.zeichneDich();
-        Kugel2.zeichneDich();
+        Kugel2.setzeFarbe("#ff0000");
 
         while (i == 1) {
             if (Maus1.istGedrueckt()) {
                 Kugel1.dreheUm(1);
                 Kugel1.rolleUm(1);
                 Kugel2.rolleUm(1);
-                if (Kugel1.xPosition() == Tisch1.) {
-
+                // physics
+                if (Kugel2.xPosition() == Tisch1.xGroesse()) {
+                    Kugel2.dreheUm(180);
+                }
+                if (Kugel2.yPosition() == Tisch1.yGroesse()) {
+                    Kugel2.dreheUm(180);
+                }
+                if (Kugel2.xPosition() == Tisch1.xGroesse() * 1 / 11) {
+                    Kugel2.dreheUm(180);
+                }
+                if (Kugel2.yPosition() == Tisch1.yGroesse() * 1 / 11) {
+                    Kugel2.dreheUm(180);
                 }
             }
             if (Tastatur1.wurdeGedrueckt()) {

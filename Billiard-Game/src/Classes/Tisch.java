@@ -14,6 +14,7 @@ public class Tisch {
         Buntstift1Tisch = new Buntstift();
     }
 
+    // Tisch zeichen
     public void zeichneDich() {
         int xVonPosition = this.Bildschirm1.breite();
         int yVonPosition = this.Bildschirm1.hoehe();
@@ -62,6 +63,21 @@ public class Tisch {
         Buntstift1Tisch.zeichneKreis(30);
     }
 
+    // Tisch xGrößenabfrage
+    public double xGroesse() {
+        double xGroesse;
+        xGroesse = Bildschirm1.breite() * 10 / 11;
+        return xGroesse;
+    }
+
+    // Tisch yGrößenabfrage
+    public double yGroesse() {
+        double yGroesse;
+        yGroesse = Bildschirm1.hoehe() * 10 / 11;
+        return yGroesse;
+    }
+
+    // Tisch freigeben
     public void gibFrei() {
         Buntstift1Tisch.gibFrei();
         Bildschirm1.gibFrei();

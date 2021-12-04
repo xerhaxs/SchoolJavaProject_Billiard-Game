@@ -1,4 +1,5 @@
 package Classes;
+import Classes.Tisch;
 import sum.kern.Buntstift;
 import sum.kern.Muster;
 import java.awt.Color;
@@ -8,14 +9,6 @@ public class Kugel {
 
     public Kugel() {
         Buntstift1Kugel = new Buntstift();
-    }
-
-    // Kugel Farbe
-    public void setzeFarbe(String KugelFarbe) {
-        Buntstift1Kugel.setzeFarbe(Color.decode(KugelFarbe));
-        Buntstift1Kugel.setzeFuellMuster(Muster.GEFUELLT);
-        this.loescheDich();
-        this.zeichneDich();
     }
 
     // Kugel zeichen
@@ -28,6 +21,14 @@ public class Kugel {
         Buntstift1Kugel.radiere();
         this.zeichneDich();
         Buntstift1Kugel.normal();
+    }
+
+    // Kugel Farbe
+    public void setzeFarbe(String KugelFarbe) {
+        this.loescheDich();
+        Buntstift1Kugel.setzeFarbe(Color.decode(KugelFarbe));
+        Buntstift1Kugel.setzeFuellMuster(Muster.GEFUELLT);
+        this.zeichneDich();
     }
 
     // Kugel rollen
@@ -50,21 +51,17 @@ public class Kugel {
     }
 
     // Kugel xPositionsabfrage
-    public boolean xPosition() {
+    public double xPosition() {
         double xPositionKugel;
         xPositionKugel = Buntstift1Kugel.hPosition();
+        return xPositionKugel;
     }
 
     // Kugel yPositionsabfrage
-    public void yPosition() {
+    public double yPosition() {
         double yPositionKugel;
         yPositionKugel = Buntstift1Kugel.vPosition();
-    }
-
-    // Kugel Gesamtpositionsabfrage
-    public void Position(int Position) {
-        Buntstift1Kugel.hPosition();
-        Buntstift1Kugel.vPosition();
+        return yPositionKugel;
     }
 
     // Kugel freigeben
