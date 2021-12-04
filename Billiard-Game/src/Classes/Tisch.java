@@ -5,7 +5,6 @@ import sum.kern.Zeichen;
 import sum.kern.Muster;
 import java.awt.Color;
 
-
 public class Tisch {
     Buntstift Buntstift1Tisch;
     Bildschirm Bildschirm1;
@@ -26,8 +25,8 @@ public class Tisch {
         int yBisPositionChanged = yBisPosition;
 
         // String erzeugen
-        String farbe = null;
-        farbe = "#9f501c";
+        String TischFarbe = null;
+        TischFarbe = "#9f501c";
 
         xVonPositionChanged = xVonPosition * 1 / 11;
         yVonPositionChanged = yVonPosition * 1 / 11;
@@ -39,7 +38,7 @@ public class Tisch {
         Buntstift1Tisch.setzeFuellMuster(Muster.GEFUELLT);
         Buntstift1Tisch.zeichneRechteck(xBisPositionChanged, yBisPositionChanged);
         Buntstift1Tisch.setzeFuellMuster(Muster.DURCHSICHTIG);
-        Buntstift1Tisch.setzeFarbe(Color.decode(farbe));
+        Buntstift1Tisch.setzeFarbe(Color.decode(TischFarbe));
         Buntstift1Tisch.setzeLinienBreite(5);
         Buntstift1Tisch.zeichneRechteck(xBisPositionChanged, yBisPositionChanged);
 

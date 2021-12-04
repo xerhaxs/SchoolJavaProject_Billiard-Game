@@ -21,17 +21,21 @@ public class BilliardV1 {
         int i = 1;
 
         Tisch1.zeichneDich();
-        Kugel1.bewege(100, 600);
-        Kugel2.bewege(500, 500);
+        Kugel1.bewegeBis(100, 600);
+        Kugel2.bewegeBis(500, 500);
 
+        Kugel1.setzeFarbe("#ababab");
         Kugel1.zeichneDich();
         Kugel2.zeichneDich();
 
         while (i == 1) {
             if (Maus1.istGedrueckt()) {
-                Kugel1.drehe(1);
-                Kugel1.rolle();
-                Kugel2.rolle();
+                Kugel1.dreheUm(1);
+                Kugel1.rolleUm(1);
+                Kugel2.rolleUm(1);
+                if (Kugel1.xPosition() == Tisch1.) {
+
+                }
             }
             if (Tastatur1.wurdeGedrueckt()) {
                 if (Tastatur1.zeichen() == Zeichen.ESCAPE) {
@@ -40,6 +44,7 @@ public class BilliardV1 {
                     Tisch1.gibFrei();
                     Kugel1.gibFrei();
                 }
+                Tastatur1.weiter();
             }
         }
     }
