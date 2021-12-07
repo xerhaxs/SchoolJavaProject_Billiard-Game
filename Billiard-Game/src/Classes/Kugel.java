@@ -25,9 +25,9 @@ public class Kugel {
     }
 
     // Kugel Farbe
-    public void setzeFarbe(String KugelFarbe) {
+    public void setzeFarbe(String pKugelFarbe) {
         this.loescheDich();
-        Buntstift1Kugel.setzeFarbe(Color.decode(KugelFarbe));
+        Buntstift1Kugel.setzeFarbe(Color.decode(pKugelFarbe));
         Buntstift1Kugel.setzeFuellMuster(Muster.GEFUELLT);
         this.zeichneDich();
     }
@@ -40,43 +40,37 @@ public class Kugel {
     }
 
     // Kugel rollen
-    public void rolleUm(int strecke) {
+    public void rolleUm(int pStrecke) {
         this.loescheDich();
-        Buntstift1Kugel.bewegeUm(strecke);
+        Buntstift1Kugel.bewegeUm(pStrecke);
         this.zeichneDich();
     }
 
     // Kugel drehen
-    public void dreheUm(int rWinkel) {
-        Buntstift1Kugel.dreheUm(rWinkel);
+    public void dreheUm(int pRWinkel) {
+        Buntstift1Kugel.dreheUm(pRWinkel);
     }
 
     // Kugel bewegen bis
-    public void bewegeBis(int xPostion, int yPostion) {
+    public void bewegeBis(int pXPostion, int pYPostion) {
         this.loescheDich();
-        Buntstift1Kugel.bewegeBis(xPostion, yPostion);
+        Buntstift1Kugel.bewegeBis(pXPostion, pYPostion);
         this.zeichneDich();
     }
 
     // Kugel Größe
-    public double KugelGroesse() {
-        int KugelGroesse;
-        KugelGroesse = zGroesse;
-        return KugelGroesse;
+    public int getGroesse() {
+        return zGroesse;
     }
 
     // Kugel xPositionsabfrage
-    public double xPosition() {
-        double xPositionKugel;
-        xPositionKugel = Buntstift1Kugel.hPosition();
-        return xPositionKugel;
+    public double getXPosition() {
+        return Buntstift1Kugel.hPosition();
     }
 
     // Kugel yPositionsabfrage
-    public double yPosition() {
-        double yPositionKugel;
-        yPositionKugel = Buntstift1Kugel.vPosition();
-        return yPositionKugel;
+    public double getYPosition() {
+        return Buntstift1Kugel.vPosition();
     }
 
     // Kugel freigeben

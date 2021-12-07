@@ -63,18 +63,25 @@ public class Tisch {
         Buntstift1Tisch.zeichneKreis(30);
     }
 
-    // Tisch xGrößenabfrage
-    public double xGroesse() {
-        double xGroesse;
-        xGroesse = Bildschirm1.breite() * 10 / 11;
-        return xGroesse;
+    // Tisch Kante oben
+    public double pXKanteOben() {
+        double pXKanteOben = Bildschirm1.hoehe() * 1 / 11;
+        return pXKanteOben;
     }
-
-    // Tisch yGrößenabfrage
-    public double yGroesse() {
-        double yGroesse;
-        yGroesse = Bildschirm1.hoehe() * 10 / 11;
-        return yGroesse;
+    // Tisch Kante unten
+    public double pXKanteUnten() {
+        double pXKanteUnten = Bildschirm1.hoehe() * 10 / 11;
+        return pXKanteUnten;
+    }
+    // Tisch Kante rechts
+    public double pYKanteRechts() {
+        double pYKanteRechts = Bildschirm1.breite() * 1 / 11;
+        return pYKanteRechts;
+    }
+    // Tisch Kante links
+    public double pYKanteLinks() {
+        double pYKanteLinks = Bildschirm1.breite() * 10 / 11;
+        return pYKanteLinks;
     }
 
     // Tisch freigeben

@@ -35,19 +35,24 @@ public class BilliardV1 {
                 Kugel1.setzeGroesse(50);
                 Kugel2.setzeGroesse(20);
                 // physics
-                if (Kugel2.xPosition() == Tisch1.xGroesse()) {
+                if (Kugel2.getXPosition() == Tisch1.pYKanteRechts()) {
                     Kugel2.dreheUm(180);
                 }
-                if (Kugel2.yPosition() == Tisch1.yGroesse()) {
+                if (Kugel2.getXPosition() == Tisch1.pYKanteLinks()) {
                     Kugel2.dreheUm(180);
                 }
-                if (Kugel2.xPosition() == Tisch1.xGroesse() * 1 / 11) {
+                if (Kugel2.getYPosition() == Tisch1.pXKanteOben()) {
                     Kugel2.dreheUm(180);
                 }
-                if (Kugel2.yPosition() == Tisch1.yGroesse() * 1 / 11) {
+                if (Kugel2.getYPosition() == Tisch1.pXKanteUnten()) {
+                    Kugel2.dreheUm(180);
+                }
+                if (Kugel1.getXPosition() == Kugel2.getXPosition() && Kugel1.getYPosition() == Kugel2.getYPosition()) {
+                    Kugel1.dreheUm(180);
                     Kugel2.dreheUm(180);
                 }
             }
+
             if (Tastatur1.wurdeGedrueckt()) {
                 if (Tastatur1.zeichen() == Zeichen.ESCAPE) {
                     Tastatur1.gibFrei();
