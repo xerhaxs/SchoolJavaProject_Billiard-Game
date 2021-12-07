@@ -1,5 +1,4 @@
 package Classes;
-import Classes.Tisch;
 import sum.kern.Buntstift;
 import sum.kern.Muster;
 import java.awt.Color;
@@ -11,9 +10,11 @@ public class Kugel {
         Buntstift1Kugel = new Buntstift();
     }
 
+    int zGroesse = 0;
+
     // Kugel zeichen
     public void zeichneDich() {
-        Buntstift1Kugel.zeichneKreis(20);
+        Buntstift1Kugel.zeichneKreis(zGroesse);
     }
 
     // Kugel löschen
@@ -28,6 +29,13 @@ public class Kugel {
         this.loescheDich();
         Buntstift1Kugel.setzeFarbe(Color.decode(KugelFarbe));
         Buntstift1Kugel.setzeFuellMuster(Muster.GEFUELLT);
+        this.zeichneDich();
+    }
+
+    // Kugel Größe
+    public void setzeGroesse(int pGroesse) {
+        this.loescheDich();
+        zGroesse = pGroesse;
         this.zeichneDich();
     }
 
@@ -48,6 +56,13 @@ public class Kugel {
         this.loescheDich();
         Buntstift1Kugel.bewegeBis(xPostion, yPostion);
         this.zeichneDich();
+    }
+
+    // Kugel Größe
+    public double KugelGroesse() {
+        int KugelGroesse;
+        KugelGroesse = zGroesse;
+        return KugelGroesse;
     }
 
     // Kugel xPositionsabfrage

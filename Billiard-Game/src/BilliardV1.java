@@ -32,6 +32,8 @@ public class BilliardV1 {
                 Kugel1.dreheUm(1);
                 Kugel1.rolleUm(1);
                 Kugel2.rolleUm(1);
+                Kugel1.setzeGroesse(50);
+                Kugel2.setzeGroesse(20);
                 // physics
                 if (Kugel2.xPosition() == Tisch1.xGroesse()) {
                     Kugel2.dreheUm(180);
