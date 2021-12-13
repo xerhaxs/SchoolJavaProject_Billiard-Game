@@ -73,15 +73,15 @@ public class Tisch {
         double pXKanteUnten = Bildschirm1.hoehe() * 10 / 11;
         return pXKanteUnten;
     }
-    // Tisch Kante rechts
-    public double pYKanteRechts() {
-        double pYKanteRechts = Bildschirm1.breite() * 1 / 11;
-        return pYKanteRechts;
-    }
     // Tisch Kante links
     public double pYKanteLinks() {
-        double pYKanteLinks = Bildschirm1.breite() * 10 / 11;
+        double pYKanteLinks = Bildschirm1.breite() * 1 / 11;
         return pYKanteLinks;
+    }
+    // Tisch Kante rechts
+    public double pYKanteRechts() {
+        double pYKanteRechts = Bildschirm1.breite() * 10 / 11;
+        return pYKanteRechts;
     }
 
     // Tisch freigeben

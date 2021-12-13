@@ -11,6 +11,7 @@ public class Kugel {
     }
 
     int zGroesse = 0;
+    int zSpeed = 0;
 
     // Kugel zeichen
     public void zeichneDich() {
@@ -32,17 +33,22 @@ public class Kugel {
         this.zeichneDich();
     }
 
-    // Kugel Größe
+    // Kugel Größe setzen
     public void setzeGroesse(int pGroesse) {
         this.loescheDich();
         zGroesse = pGroesse;
         this.zeichneDich();
     }
 
+    // Kugel Speed
+    public void speed(int pSpeed) {
+        zSpeed = pSpeed;
+    }
+
     // Kugel rollen
-    public void rolleUm(int pStrecke) {
+    public void rolle() {
         this.loescheDich();
-        Buntstift1Kugel.bewegeUm(pStrecke);
+        Buntstift1Kugel.bewegeUm(zSpeed);
         this.zeichneDich();
     }
 
@@ -58,9 +64,14 @@ public class Kugel {
         this.zeichneDich();
     }
 
-    // Kugel Größe
+    // Kugel Größe abfragen
     public int getGroesse() {
         return zGroesse;
+    }
+
+    // Kugel Speed abfragen
+    public int getSpeed() {
+        return zSpeed;
     }
 
     // Kugel xPositionsabfrage
