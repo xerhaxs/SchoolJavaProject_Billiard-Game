@@ -60,8 +60,13 @@ public class Kugel {
     }
 
     // Kugel dreheUm
-    public void dreheUm(int pRWinkel) {
+    public void dreheUm(double pRWinkel) {
         Buntstift1Kugel.dreheUm(pRWinkel);
+    }
+
+    // Kugel dreheUm
+    public void abprallen(double pWinkel) {
+        Buntstift1Kugel.dreheBis(pWinkel);
     }
 
     // Kugel bewegen bis

@@ -32,39 +32,40 @@ public class BilliardV1 {
 
         Kugel1.speed(5);
         Kugel2.speed(1);
-
-        System.out.println(Kugel1.winkel());
+        Kugel1.dreheUm(20);
+        Kugel2.dreheUm(100);
 
         while (i == 1) {
             if (Maus1.istGedrueckt()) {
                 Kugel1.rolle();
                 Kugel2.rolle();
 
-                // physics
+                // physics Kugel1
                 if (Kugel1.getXPosition() >= Tisch1.pYKanteRechts() - Kugel1.getGroesse() - 5) {
-                    Kugel1.dreheUm(180);
+                    Kugel1.abprallen(180 - Kugel1.winkel());
                 }
                 if (Kugel1.getXPosition() <= Tisch1.pYKanteLinks() + Kugel1.getGroesse() + 5) {
-                    Kugel1.dreheUm(180);
+                    Kugel1.abprallen(180 - Kugel1.winkel());
                 }
                 if (Kugel1.getYPosition() <= Tisch1.pXKanteOben() + Kugel1.getGroesse() + 5) {
-                    Kugel1.dreheUm(180);
+                    Kugel1.abprallen(360 - Kugel1.winkel());
                 }
                 if (Kugel1.getYPosition() >= Tisch1.pXKanteUnten() - Kugel1.getGroesse() - 5) {
-                    Kugel1.dreheUm(180);
+                    Kugel1.abprallen(360 - Kugel1.winkel());
                 }
 
+                // physics Kugel2
                 if (Kugel2.getXPosition() >= Tisch1.pYKanteRechts() - Kugel2.getGroesse() - 5) {
-                    Kugel2.dreheUm(180);
+                    Kugel2.abprallen(180 - Kugel2.winkel());
                 }
                 if (Kugel2.getXPosition() <= Tisch1.pYKanteLinks() + Kugel2.getGroesse() + 5) {
-                    Kugel2.dreheUm(180);
+                    Kugel2.abprallen(180 - Kugel2.winkel());
                 }
                 if (Kugel2.getYPosition() <= Tisch1.pXKanteOben() + Kugel2.getGroesse() + 5) {
-                    Kugel2.dreheUm(180);
+                    Kugel2.abprallen(360 - Kugel2.winkel());
                 }
                 if (Kugel2.getYPosition() >= Tisch1.pXKanteUnten() - Kugel2.getGroesse() - 5) {
-                    Kugel2.dreheUm(180);
+                    Kugel2.abprallen(360 - Kugel2.winkel());
                 }
                 if (Kugel1.getXPosition() == Kugel2.getXPosition() && Kugel1.getYPosition() == Kugel2.getYPosition()) {
                     Kugel1.dreheUm(180);
