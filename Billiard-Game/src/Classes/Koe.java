@@ -10,7 +10,7 @@ public class Koe {
 
     // Koe zeichen
     public void zeichneDich() {
-        Buntstift1Koe.zeichneKreis();
+        Buntstift1Koe.zeichneKreis(5);
     }
 
     // Koe löschen

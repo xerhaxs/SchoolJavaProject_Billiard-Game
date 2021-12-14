@@ -30,46 +30,46 @@ public class BilliardV1 {
         Kugel1.setzeGroesse(50);
         Kugel2.setzeGroesse(20);
 
-        Kugel1.speed(1);
+        Kugel1.speed(5);
         Kugel2.speed(1);
+
+        System.out.println(Kugel1.winkel());
 
         while (i == 1) {
             if (Maus1.istGedrueckt()) {
                 Kugel1.rolle();
                 Kugel2.rolle();
 
-
                 // physics
-                if (Kugel1.getXPosition() == Tisch1.pYKanteRechts() - Kugel1.getGroesse() - 5) {
+                if (Kugel1.getXPosition() >= Tisch1.pYKanteRechts() - Kugel1.getGroesse() - 5) {
                     Kugel1.dreheUm(180);
                 }
-                if (Kugel1.getXPosition() == Tisch1.pYKanteLinks() + Kugel1.getGroesse() + 5) {
+                if (Kugel1.getXPosition() <= Tisch1.pYKanteLinks() + Kugel1.getGroesse() + 5) {
                     Kugel1.dreheUm(180);
                 }
-                if (Kugel1.getYPosition() == Tisch1.pXKanteOben() + Kugel1.getGroesse() + 5) {
+                if (Kugel1.getYPosition() <= Tisch1.pXKanteOben() + Kugel1.getGroesse() + 5) {
                     Kugel1.dreheUm(180);
                 }
-                if (Kugel1.getYPosition() == Tisch1.pXKanteUnten() - Kugel1.getGroesse() - 5) {
+                if (Kugel1.getYPosition() >= Tisch1.pXKanteUnten() - Kugel1.getGroesse() - 5) {
                     Kugel1.dreheUm(180);
                 }
 
-                if (Kugel2.getXPosition() == Tisch1.pYKanteRechts() - Kugel2.getGroesse() - 5) {
+                if (Kugel2.getXPosition() >= Tisch1.pYKanteRechts() - Kugel2.getGroesse() - 5) {
                     Kugel2.dreheUm(180);
                 }
-                if (Kugel2.getXPosition() == Tisch1.pYKanteLinks() + Kugel2.getGroesse() + 5) {
+                if (Kugel2.getXPosition() <= Tisch1.pYKanteLinks() + Kugel2.getGroesse() + 5) {
                     Kugel2.dreheUm(180);
                 }
-                if (Kugel2.getYPosition() == Tisch1.pXKanteOben() + Kugel2.getGroesse() + 5) {
+                if (Kugel2.getYPosition() <= Tisch1.pXKanteOben() + Kugel2.getGroesse() + 5) {
                     Kugel2.dreheUm(180);
                 }
-                if (Kugel2.getYPosition() == Tisch1.pXKanteUnten() - Kugel2.getGroesse() - 5) {
+                if (Kugel2.getYPosition() >= Tisch1.pXKanteUnten() - Kugel2.getGroesse() - 5) {
                     Kugel2.dreheUm(180);
                 }
                 if (Kugel1.getXPosition() == Kugel2.getXPosition() && Kugel1.getYPosition() == Kugel2.getYPosition()) {
                     Kugel1.dreheUm(180);
                     Kugel2.dreheUm(180);
                 }
-
             }
 
             if (Tastatur1.wurdeGedrueckt()) {

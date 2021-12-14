@@ -12,6 +12,7 @@ public class Kugel {
 
     int zGroesse = 0;
     int zSpeed = 0;
+    double zWinkel = 0;
 
     // Kugel zeichen
     public void zeichneDich() {
@@ -52,7 +53,13 @@ public class Kugel {
         this.zeichneDich();
     }
 
-    // Kugel drehen
+    // Kugel winkel
+    public double winkel() {
+        zWinkel = Buntstift1Kugel.winkel();
+        return zWinkel;
+    }
+
+    // Kugel dreheUm
     public void dreheUm(int pRWinkel) {
         Buntstift1Kugel.dreheUm(pRWinkel);
     }
