@@ -5,6 +5,7 @@ import java.awt.Color;
 
 public class Kugel {
     Buntstift Buntstift1Kugel;
+    Tisch KenntTisch1;
 
     public Kugel() {
         Buntstift1Kugel = new Buntstift();
@@ -13,6 +14,11 @@ public class Kugel {
     int zGroesse = 0;
     int zSpeed = 0;
     double zWinkel = 0;
+
+    // Variablen Kent
+    public void kenntTisch(Tisch pTisch) {
+        KenntTisch1 = pTisch;
+    }
 
     // Kugel zeichen
     public void zeichneDich() {
@@ -50,6 +56,18 @@ public class Kugel {
     public void rolle() {
         this.loescheDich();
         Buntstift1Kugel.bewegeUm(zSpeed);
+        if (this.getXPosition() >= KenntTisch1.pYKanteRechts() - this.getGroesse() - 5) {
+            this.abprallen(180 - this.winkel());
+        }
+        if (this.getXPosition() <= KenntTisch1.pYKanteLinks() + this.getGroesse() + 5) {
+            this.abprallen(180 - this.winkel());
+        }
+        if (this.getYPosition() <= KenntTisch1.pXKanteOben() + this.getGroesse() + 5) {
+            this.abprallen(360 - this.winkel());
+        }
+        if (this.getYPosition() >= KenntTisch1.pXKanteUnten() - this.getGroesse() - 5) {
+            this.abprallen(360 - this.winkel());
+        }
         this.zeichneDich();
     }
 

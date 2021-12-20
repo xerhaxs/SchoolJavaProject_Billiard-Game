@@ -19,4 +19,12 @@ public class Koe {
         this.zeichneDich();
         Buntstift1Koe.normal();
     }
+
+    // Koe freigeben
+    public void gibFrei() {
+        this.loescheDich();
+        Buntstift1Koe.gibFrei();
+    }
+
+
 }
