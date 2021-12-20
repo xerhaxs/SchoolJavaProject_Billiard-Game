@@ -56,6 +56,7 @@ public class Kugel {
     public void rolle() {
         this.loescheDich();
         Buntstift1Kugel.bewegeUm(zSpeed);
+        this.zeichneDich();
         if (this.getXPosition() >= KenntTisch1.pYKanteRechts() - this.getGroesse() - 5) {
             this.abprallen(180 - this.winkel());
         }
@@ -68,7 +69,6 @@ public class Kugel {
         if (this.getYPosition() >= KenntTisch1.pXKanteUnten() - this.getGroesse() - 5) {
             this.abprallen(360 - this.winkel());
         }
-        this.zeichneDich();
     }
 
     // Kugel winkel

@@ -22,19 +22,21 @@ public class BilliardV1 {
 
         Kugel1.kenntTisch(Tisch1);
         Kugel2.kenntTisch(Tisch1);
-        
+
         Tisch1.zeichneDich();
+
         Kugel1.bewegeBis(700, 800);
         Kugel2.bewegeBis(500, 500);
 
         Kugel1.setzeFarbe("#ababab");
         Kugel2.setzeFarbe("#ff0000");
 
-        Kugel1.setzeGroesse(50);
+        Kugel1.setzeGroesse(100);
         Kugel2.setzeGroesse(20);
 
-        Kugel1.speed(5);
-        Kugel2.speed(1);
+        Kugel1.speed(6);
+        Kugel2.speed(4);
+
         Kugel1.dreheUm(20);
         Kugel2.dreheUm(100);
 
