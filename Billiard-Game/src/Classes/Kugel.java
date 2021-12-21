@@ -57,6 +57,7 @@ public class Kugel {
         this.loescheDich();
         Buntstift1Kugel.bewegeUm(zSpeed);
         this.zeichneDich();
+        // physics boarder
         if (this.getXPosition() >= KenntTisch1.pYKanteRechts() - this.getGroesse() - 5) {
             this.abprallen(180 - this.winkel());
         }

@@ -3,6 +3,7 @@ import Classes.Tisch;
 import sum.kern.Maus;
 import sum.kern.Tastatur;
 import sum.kern.Zeichen;
+import java.math.*;
 
 public class BilliardV1 {
     public static void main(String[]  args) {
@@ -32,10 +33,10 @@ public class BilliardV1 {
         Kugel2.setzeFarbe("#ff0000");
 
         Kugel1.setzeGroesse(100);
-        Kugel2.setzeGroesse(20);
+        Kugel2.setzeGroesse(60);
 
-        Kugel1.speed(6);
-        Kugel2.speed(4);
+        Kugel1.speed(1);
+        Kugel2.speed(1);
 
         Kugel1.dreheUm(20);
         Kugel2.dreheUm(100);
@@ -44,6 +45,11 @@ public class BilliardV1 {
             if (Maus1.istGedrueckt()) {
                 Kugel1.rolle();
                 Kugel2.rolle();
+                // physics kugel abprallen
+                if (Math.sqrt(Kugel2.getXPosition() - Kugel1.getXPosition()) + Math.sqrt(Kugel2.getYPosition() - Kugel1.getYPosition()) <= Math.sqrt(Kugel1.getGroesse() + Kugel2.getGroesse())) {
+                    Kugel1.dreheUm(180);
+                    Kugel2.dreheUm(180);
+                }
             }
 
             if (Tastatur1.wurdeGedrueckt()) {
