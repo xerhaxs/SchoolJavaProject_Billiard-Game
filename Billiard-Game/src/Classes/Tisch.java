@@ -35,8 +35,8 @@ public class Tisch {
         yBisPositionChanged = yBisPosition * 9 / 11;
 
         Buntstift1Tisch.bewegeBis(xVonPositionChanged, yVonPositionChanged);
-        Buntstift1Tisch.setzeFarbe(Color.GREEN);
-        Buntstift1Tisch.setzeFuellMuster(Muster.GEFUELLT);
+        //Buntstift1Tisch.setzeFarbe(Color.GREEN);
+        //Buntstift1Tisch.setzeFuellMuster(Muster.GEFUELLT);
         Buntstift1Tisch.zeichneRechteck(xBisPositionChanged, yBisPositionChanged);
         Buntstift1Tisch.setzeFuellMuster(Muster.DURCHSICHTIG);
         Buntstift1Tisch.setzeFarbe(Color.decode(TischFarbe));

@@ -5,7 +5,7 @@ import java.awt.Color;
 
 public class Kugel {
     Buntstift Buntstift1Kugel;
-    Tisch KenntTisch1;
+    Spieltisch KenntSpieltisch1;
 
     public Kugel() {
         Buntstift1Kugel = new Buntstift();
@@ -16,8 +16,8 @@ public class Kugel {
     double zWinkel = 0;
 
     // Variablen Kent
-    public void kenntTisch(Tisch pTisch) {
-        KenntTisch1 = pTisch;
+    public void kenntSpieltisch(Spieltisch pSpieltisch) {
+        KenntSpieltisch1 = pSpieltisch;
     }
 
     // Kugel zeichen
@@ -58,16 +58,16 @@ public class Kugel {
         Buntstift1Kugel.bewegeUm(zSpeed);
         this.zeichneDich();
         // physics boarder
-        if (this.getXPosition() >= KenntTisch1.pYKanteRechts() - this.getGroesse() - 5) {
+        if (this.getXPosition() >= KenntSpieltisch1.pYKanteRechts() - this.getGroesse() - 5) {
             this.abprallen(180 - this.winkel());
         }
-        if (this.getXPosition() <= KenntTisch1.pYKanteLinks() + this.getGroesse() + 5) {
+        if (this.getXPosition() <= KenntSpieltisch1.pYKanteLinks() + this.getGroesse() + 5) {
             this.abprallen(180 - this.winkel());
         }
-        if (this.getYPosition() <= KenntTisch1.pXKanteOben() + this.getGroesse() + 5) {
+        if (this.getYPosition() <= KenntSpieltisch1.pXKanteOben() + this.getGroesse() + 5) {
             this.abprallen(360 - this.winkel());
         }
-        if (this.getYPosition() >= KenntTisch1.pXKanteUnten() - this.getGroesse() - 5) {
+        if (this.getYPosition() >= KenntSpieltisch1.pXKanteUnten() - this.getGroesse() - 5) {
             this.abprallen(360 - this.winkel());
         }
     }
