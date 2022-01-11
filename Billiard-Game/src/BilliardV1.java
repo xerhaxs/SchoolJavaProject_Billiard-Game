@@ -15,8 +15,8 @@ public class BilliardV1 {
         Spieltisch Spieltisch2;
         Kugel Kugel1_1;
         Kugel Kugel1_2;
-        Kugel Kugel2_2;
         Kugel Kugel2_3;
+        Kugel Kugel2_4;
 
         Bildschirm1 = new Bildschirm();
         Spieltisch1 = new Spieltisch();
@@ -26,51 +26,58 @@ public class BilliardV1 {
         Spieltisch2 = new Spieltisch();
         Kugel1_1 = new Kugel();
         Kugel1_2 = new Kugel();
-        Kugel2_2 = new Kugel();
         Kugel2_3 = new Kugel();
+        Kugel2_4 = new Kugel();
 
         int i = 1;
 
         Spieltisch1.zeichneDich(500, 500, 20, 20);
-        Spieltisch2.zeichneDich(450,200,520,520);
+        Spieltisch2.zeichneDich(450,200,520,600);
 
         Kugel1_1.kenntSpieltisch(Spieltisch1);
         Kugel1_2.kenntSpieltisch(Spieltisch1);
-        Kugel2_2.kenntSpieltisch(Spieltisch2);
         Kugel2_3.kenntSpieltisch(Spieltisch2);
+        Kugel2_4.kenntSpieltisch(Spieltisch2);
 
         Kugel1_1.bewegeBis(200, 200);
         Kugel1_2.bewegeBis(220, 220);
-        Kugel2_2.bewegeBis(600, 600);
-        Kugel2_3.bewegeBis(620, 620);
+        Kugel2_3.bewegeBis(600, 620);
+        Kugel2_4.bewegeBis(620, 620);
 
         Kugel1_1.setzeFarbe("#ababab");
         Kugel1_2.setzeFarbe("#ff0000");
-        Kugel2_2.setzeFarbe("#ffff00");
-        Kugel2_2.setzeFarbe("#ff00ff");
+        Kugel2_3.setzeFarbe("#ffff00");
+        Kugel2_4.setzeFarbe("#ff00ff");
 
 
         Kugel1_1.setzeGroesse(5);
         Kugel1_2.setzeGroesse(10);
-        Kugel2_2.setzeGroesse(6);
-        Kugel2_3.setzeGroesse(8);
+        Kugel2_3.setzeGroesse(6);
+        Kugel2_4.setzeGroesse(8);
 
         Kugel1_1.speed(1);
         Kugel1_2.speed(1);
-        Kugel2_2.speed(1);
         Kugel2_3.speed(1);
+        Kugel2_4.speed(1);
 
         Kugel1_1.dreheUm(20);
         Kugel1_2.dreheUm(100);
+
+        Kugel2_3.dreheUm(5);
+        Kugel2_4.dreheUm(10);
 
         while (i == 1) {
             if (Maus1.istGedrueckt()) {
                 Kugel1_1.rolle();
                 Kugel1_2.rolle();
-                Kugel2_2.rolle();
                 Kugel2_3.rolle();
+                Kugel2_4.rolle();
                 // physics kugel abprallen
                 if (Math.sqrt(Kugel1_2.getXPosition() - Kugel1_1.getXPosition()) + Math.sqrt(Kugel1_2.getYPosition() - Kugel1_1.getYPosition()) <= Math.sqrt(Kugel1_1.getGroesse() + Kugel1_2.getGroesse())) {
+                    Kugel1_1.dreheUm(180);
+                    Kugel1_2.dreheUm(180);
+                }
+                if (Math.sqrt(Kugel2_4.getXPosition() - Kugel2_3.getXPosition()) + Math.sqrt(Kugel2_4.getYPosition() - Kugel2_3.getYPosition()) <= Math.sqrt(Kugel2_3.getGroesse() + Kugel2_4.getGroesse())) {
                     Kugel1_1.dreheUm(180);
                     Kugel1_2.dreheUm(180);
                 }
