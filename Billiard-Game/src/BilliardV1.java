@@ -49,7 +49,6 @@ public class BilliardV1 {
         Kugel2_3.setzeFarbe("#ffff00");
         Kugel2_4.setzeFarbe("#ff00ff");
 
-
         Kugel1_1.setzeGroesse(5);
         Kugel1_2.setzeGroesse(10);
         Kugel2_3.setzeGroesse(6);
@@ -78,8 +77,8 @@ public class BilliardV1 {
                     Kugel1_2.dreheUm(180);
                 }
                 if (Math.sqrt(Kugel2_4.getXPosition() - Kugel2_3.getXPosition()) + Math.sqrt(Kugel2_4.getYPosition() - Kugel2_3.getYPosition()) <= Math.sqrt(Kugel2_3.getGroesse() + Kugel2_4.getGroesse())) {
-                    Kugel1_1.dreheUm(180);
-                    Kugel1_2.dreheUm(180);
+                    Kugel2_3.dreheUm(180);
+                    Kugel2_4.dreheUm(180);
                 }
             }
 
