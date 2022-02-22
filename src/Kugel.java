@@ -1,4 +1,4 @@
-package Classes;
+package src;
 import sum.kern.Buntstift;
 import sum.kern.Muster;
 import java.awt.Color;
@@ -12,8 +12,9 @@ public class Kugel {
     }
 
     int zGroesse = 0;
-    int zSpeed = 0;
+    double zSpeed = 0;
     double zWinkel = 0;
+    String zKugelFarbe;
 
     // Variablen Kent
     public void kenntSpieltisch(Spieltisch pSpieltisch) {
@@ -34,6 +35,7 @@ public class Kugel {
 
     // Kugel Farbe
     public void setzeFarbe(String pKugelFarbe) {
+        zKugelFarbe = pKugelFarbe;
         this.loescheDich();
         Buntstift1Kugel.setzeFarbe(Color.decode(pKugelFarbe));
         Buntstift1Kugel.setzeFuellMuster(Muster.GEFUELLT);
@@ -48,7 +50,7 @@ public class Kugel {
     }
 
     // Kugel Speed
-    public void speed(int pSpeed) {
+    public void setSpeed(double pSpeed) {
         zSpeed = pSpeed;
     }
 
@@ -101,7 +103,7 @@ public class Kugel {
     }
 
     // Kugel Speed abfragen
-    public int getSpeed() {
+    public double getSpeed() {
         return zSpeed;
     }
 
@@ -118,5 +120,9 @@ public class Kugel {
     // Kugel freigeben
     public void gibFrei() {
         Buntstift1Kugel.gibFrei();
+    }
+
+    public String getFarbe() {
+        return zKugelFarbe;
     }
 }

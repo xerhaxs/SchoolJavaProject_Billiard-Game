@@ -1,9 +1,8 @@
-package Classes;
+package src;
 
 public class Doppelkugel extends Kugel {
     private int zInnereGroesse;
     public Doppelkugel() {
-
     }
 
     public int getInnereGroesse() {

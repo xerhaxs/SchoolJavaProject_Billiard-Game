@@ -2,48 +2,26 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="368bc83c-0868-4723-84ad-ca4af0ae5081" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/KotlinJavaRuntime__3_.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/QTJava.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/SuMAkzeptor.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/SuMEreignis.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/SuMGenerator.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/SuMKern.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/SuMKomponenten.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/SuMMultimedia.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/SuMNetz.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/SuMSQL.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/SuMStrukturen.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/SuMTransduktor.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/SuMWerkzeuge.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/doc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/mysql_connector_java_5_1_15_bin.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/xpp3_min_1_1_3_4_I.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/xstream_1_1_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Billiard-Game/Billiard-Game.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Billiard-Game/src/BilliardV1.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Billiard-Game/src/Classes/Koe.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Billiard-Game/src/Classes/Kugel.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Billiard-Game/src/Classes/Spieltisch.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Billiard-Game/src/Classes/Tisch.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SchoolJavaProject_Billiard-Game.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Billiard-Game/BilliardV1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Billiard-Game/Classes/Koe.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Billiard-Game/Classes/Kugel.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Billiard-Game/Classes/Spieltisch.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Billiard-Game/Classes/Tisch.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/BilliardV1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/BilliardV1.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectId" id="25QMuV38UVGRpbEh8sIRlA8kZkz" />
   <component name="ProjectViewState">
@@ -53,20 +31,10 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-  </component>
-  <component name="RunManager">
-    <configuration name="BilliardV1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="BilliardV1" />
-      <module name="SchoolJavaProject_Billiard-Game" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <recent_temporary>
-      <list>
-        <item itemvalue="Application.BilliardV1" />
-      </list>
-    </recent_temporary>
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../.libraries/Java/SuMMac/SuMMac 7.3.1/Bibs/in userlib/xstream-1.1.2.jar" />
+    <property name="project.structure.last.edited" value="Libraries" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.2" />
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -78,5 +46,16 @@
       <updated>1645455081524</updated>
     </task>
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>

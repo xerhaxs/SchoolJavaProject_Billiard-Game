@@ -1,4 +1,4 @@
-package Classes;
+package src;
 import sum.kern.Buntstift;
 
 public class Koe {
