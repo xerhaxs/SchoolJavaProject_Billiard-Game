@@ -18,6 +18,7 @@ public class BilliardV1 {
         Kugel Kugel2_3;
         Kugel Kugel2_4;
         Reibungskugel Reibungskugel1_1;
+        Ukrainerkugel Ukrainerkugel1_1;
         //Doppelkugel Doppelkugel1_1;
 
         Bildschirm1 = new Bildschirm();
@@ -32,6 +33,7 @@ public class BilliardV1 {
         Kugel2_3 = new Kugel();
         Kugel2_4 = new Kugel();
         Reibungskugel1_1 = new Reibungskugel();
+        Ukrainerkugel1_1 = new Ukrainerkugel();
         //Doppelkugel1_1 = new Doppelkugel();
 
         int i = 1;
@@ -45,6 +47,7 @@ public class BilliardV1 {
         Kugel2_3.kenntSpieltisch(Spieltisch2);
         Kugel2_4.kenntSpieltisch(Spieltisch2);
         Reibungskugel1_1.kenntSpieltisch(Spieltisch1);
+        Ukrainerkugel1_1.kenntSpieltisch(Spieltisch1);
         //Doppelkugel1_1.kenntSpieltisch(Spieltisch1);
 
         Kugel1_1.bewegeBis(200, 200);
@@ -53,6 +56,7 @@ public class BilliardV1 {
         Kugel2_3.bewegeBis(600, 620);
         Kugel2_4.bewegeBis(620, 620);
         Reibungskugel1_1.bewegeBis(100, 100);
+        Ukrainerkugel1_1.bewegeBis(250, 250);
         //Doppelkugel1_1.bewegeBis(200, 200);
 
         Kugel1_1.setzeFarbe("#ababab");
@@ -69,6 +73,7 @@ public class BilliardV1 {
         Kugel2_3.setzeGroesse(6);
         Kugel2_4.setzeGroesse(8);
         Reibungskugel1_1.setzeGroesse(15);
+        Ukrainerkugel1_1.setzeGroesse(20);
         //Doppelkugel1_1.setzeInnereGroesse(10);
 
         Kugel1_1.setSpeed(1);
@@ -77,6 +82,7 @@ public class BilliardV1 {
         Kugel2_3.setSpeed(1);
         Kugel2_4.setSpeed(1);
         Reibungskugel1_1.setSpeed(1);
+        Ukrainerkugel1_1.setSpeed(1);
         //Doppelkugel1_1.setSpeed(1);
 
         Kugel1_1.dreheUm(20);
@@ -85,6 +91,7 @@ public class BilliardV1 {
         Kugel2_3.dreheUm(5);
         Kugel2_4.dreheUm(10);
         Reibungskugel1_1.dreheUm(4);
+        Ukrainerkugel1_1.dreheUm(0);
         //Doppelkugel1_1.dreheUm(20);
 
         Reibungskugel1_1.setReibung(0.0005);
@@ -98,6 +105,7 @@ public class BilliardV1 {
                 Kugel2_3.rolle();
                 Kugel2_4.rolle();
                 Reibungskugel1_1.rolle();
+                Ukrainerkugel1_1.rolle();
                 //Doppelkugel1_1.rolle();
 
                 // physics kugel abprallen
