@@ -1,45 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="368bc83c-0868-4723-84ad-ca4af0ae5081" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Russlandkugel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Ukrainerkugel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitattributes" beforeDir="false" afterPath="$PROJECT_DIR$/.gitattributes" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/SuMAkzeptor.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/SuMAkzeptor.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/LICENSE" beforeDir="false" afterPath="$PROJECT_DIR$/LICENSE" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SchoolJavaProject_Billiard-Game.iml" beforeDir="false" afterPath="$PROJECT_DIR$/SchoolJavaProject_Billiard-Game.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SchoolJavaProject_Billiard-Game/.gitattributes" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SchoolJavaProject_Billiard-Game/.gitattributes" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SchoolJavaProject_Billiard-Game/.idea/libraries/SuMAkzeptor.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SchoolJavaProject_Billiard-Game/.idea/libraries/SuMAkzeptor.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SchoolJavaProject_Billiard-Game/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SchoolJavaProject_Billiard-Game/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SchoolJavaProject_Billiard-Game/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SchoolJavaProject_Billiard-Game/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SchoolJavaProject_Billiard-Game/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SchoolJavaProject_Billiard-Game/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SchoolJavaProject_Billiard-Game/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SchoolJavaProject_Billiard-Game/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SchoolJavaProject_Billiard-Game/LICENSE" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SchoolJavaProject_Billiard-Game/LICENSE" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SchoolJavaProject_Billiard-Game/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SchoolJavaProject_Billiard-Game/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SchoolJavaProject_Billiard-Game/SchoolJavaProject_Billiard-Game.iml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SchoolJavaProject_Billiard-Game/SchoolJavaProject_Billiard-Game.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SchoolJavaProject_Billiard-Game/src/BilliardV1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SchoolJavaProject_Billiard-Game/src/BilliardV1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SchoolJavaProject_Billiard-Game/src/Doppelkugel.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SchoolJavaProject_Billiard-Game/src/Doppelkugel.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SchoolJavaProject_Billiard-Game/src/Dopplerkugel.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SchoolJavaProject_Billiard-Game/src/Dopplerkugel.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SchoolJavaProject_Billiard-Game/src/Koe.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SchoolJavaProject_Billiard-Game/src/Koe.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SchoolJavaProject_Billiard-Game/src/Kugel.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SchoolJavaProject_Billiard-Game/src/Kugel.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SchoolJavaProject_Billiard-Game/src/Reibungskugel.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SchoolJavaProject_Billiard-Game/src/Reibungskugel.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SchoolJavaProject_Billiard-Game/src/Spieltisch.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SchoolJavaProject_Billiard-Game/src/Spieltisch.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SchoolJavaProject_Billiard-Game/src/Tisch.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SchoolJavaProject_Billiard-Game/src/Tisch.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/BilliardV1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/BilliardV1.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Doppelkugel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Doppelkugel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Dopplerkugel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Dopplerkugel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Koe.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Koe.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Kugel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Kugel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Reibungskugel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Reibungskugel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Spieltisch.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Spieltisch.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Tisch.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Tisch.java" afterDir="false" />
-    </list>
+    <list default="true" id="368bc83c-0868-4723-84ad-ca4af0ae5081" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -75,7 +37,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../.libraries/Java/SuMMac/SuMMac 7.3.1/Bibs/in userlib/xstream-1.1.2.jar" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Verbrauchsrechner" />
     <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.2" />
